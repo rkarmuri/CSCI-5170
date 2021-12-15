@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Transaction</title>
+    </head>
+    <style>
+                body{
+                background-color: yellow;
+                }
+                h1 {
+                        color: black;
+                        text-align: center;
+                        }
+
+                p {
+                        font-family: verdana;
+                        font-size: 20px;
+                        }
+        </style>
+    <body>
+        <center>
+        <h1>Library Management System</h1>
+        <div class="topnav">
+                        <p><a href="http://40.114.24.182/home.html" style="color:green">Home</a></p>
+        </div>
+        <h1>Add Transaction</h1>
+        <form method="post" action="connect3.php">
+            <label for="transID" style="color:black">Transaction ID:</label>
+            <input type="text" id="transID" name="transID">
+            <br>
+            <label for="ISBN" style="color:black">ISBN:</label>
+            <input type="text" id="ISBN" name="ISBN">
+            <br>
+            <label for="patronID" style="color:black">Patron ID:</label>
+            <input type="text" id="patronID" name="patronID">
+            <br>
+            <label for="empID" style="color:black">Employee ID:</label>
+            <input type="text" id="empID" name="empID">
+            <br>
+            <label for="Birthday" style="color:black">Checked:</label>
+			<input type="text" id="Checked" name="Checked">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+                </center>
+    </body>
+</html>

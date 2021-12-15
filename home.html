@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Database</title>
+        <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+        integrity="sha256-BDmtN+79VRrkfamzD16UnAoJP8zMitAz093tvZATdiE=" crossorigin="anonymous"></script>
+ </head>
+        <style>
+                h1 {
+                        color: white;
+                        text-align: center;
+                        }
+
+                p {
+                        font-family: Arial;
+                        font-size: 30px;
+                        }
+                body{
+                background-image: url(https://k48b9e9840-flywheel.netdna-ssl.com/wp-content/uploads/2021/07/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+                }
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative
+}
+.dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    display: none;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+	    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: orange;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+</style>
+    <body>
+                <h1>Library Management System</h1>
+        <center>
+        <form method="post" action="search.php">
+        <div class="topnav">
+        <a class="active" href="http://40.114.24.182/home.html" style="font-size: 20px;color:white">Home</a>
+        <a href="http://40.114.24.182/input_data.html" style="font-size: 20px;color:white">Add Data</a>
+        <div class="dropdown">
+        <button class="dropbtn"> Contents</button>
+        <div class="dropdown-content">
+        <a href="http://40.114.24.182/book.html"> Books </a>
+        <a href="http://40.114.24.182/patron.html"> Patrons </a>
+        <a href="http://40.114.24.182/employ_info.php"> Employees </a>
+                </div>
+                </div>
+            <input type="text" id="searchBox" name="search" placeholder="Search a book">
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+            </div>
+        </form>
+        </center>
+    </body>
+</html>

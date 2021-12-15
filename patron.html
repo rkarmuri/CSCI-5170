@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transaction data</title>
+    </head>
+    <style>
+        h1 { color: white;
+             text-align: center;
+            }
+        p {
+             font-family: Arial;
+             font-size: 30px;
+           }
+        body {
+             background-image:url(https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2020/01/10105107/nypl.jpg);
+             }
+    </style>
+    <body>
+        <h1>Transaction Information</h1>
+        <center>
+        <div class="topnav">
+            <form method="post" action="patrons_info.php">
+            <a href="http://40.114.24.182/home.html" style="font-size: 20px;color:white">Home</a>
+            <a href="http://40.114.24.182/patron.php" style="font-size: 20px;color:white">Patrons checked</a>
+            <a href="http://40.114.24.182/popauthor.php" style="font-size: 20px;color:white">Popular Author</a>
+            <a href="http://40.114.24.182/autorenew.php" style="font-size: 20px;color:white">Auto renewals</a>
+            <a href="http://40.114.24.182/avgage.php" style="font-size: 20px;color:white">Age of Patrons</a>
+            </div>
+            <p><input type="text" id="searchBox" name="search" placeholder="Search a patron">
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p></form>
+            <form method="post" action="yearsearch.php">
+            <p><input type="text" id="searchBox" name="search" placeholder="Search a year">
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p></form>
+        </div>
+        </center>
+    </body>
+</html>

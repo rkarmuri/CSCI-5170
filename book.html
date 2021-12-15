@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book data</title>
+    </head>
+    <style>
+        h1 { color: white;
+             text-align: center;
+            }
+        p {
+             font-family: Arial;
+             font-size: 30px;
+           }
+        body {
+             background-image:url(http://books4all.org/wp-content/uploads/2017/06/books.jpg);
+             }
+        .dropbtn {
+             background-color: white;
+             color: black;
+             padding: 8px;
+             font-size: 15px;
+        }
+        .dropdown {
+             display: inline-block;
+             position: relative
+        }
+        .dropdown-content {
+             position: absolute;
+             background-color: white;
+             min-width: 200px;
+             display: none;
+             z-index: 1;
+         }
+         .dropdown-content a {
+             color: black;
+             padding: 12px 16px;
+             text-decoration: none;
+             display: block;
+          }
+          .dropdown-content a:hover {
+		               background-color: orange;
+          }
+          .dropdown:hover .dropdown-content {
+             display: block;
+          }
+          .dropdown:hover .dropbtn {
+             background-color: grey;
+          }
+    </style>
+    <body>
+        <h1>Book Information</h1>
+        <center>
+        <div class="topnav">
+            <form method="post" action="author.php">
+            <a href="http://40.114.24.182/home.html" style="font-size: 20px;color:white">Home</a>
+            <a href="http://40.114.24.182/books_info.php" style="font-size: 20px;color:white">All Books data</a>
+            <div class="dropdown">
+            <button class="dropbtn">Genres</button>
+            <div class="dropdown-content">
+                <a href="http://40.114.24.182/popgenre.php">Most Popular</a>
+                <a href="">Fiction</a>
+                <a href="">Memoir</a>
+                <a href="">Poetry</a>
+                <a href="">Science Fiction</a>
+                <a href="">Philosophy</a>
+                <a href="">Essay</a>
+                <a href="">Biography</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">Formats</button>
+            <div class="dropdown-content">
+                <a href="">Paperback</a>
+                <a href="http://40.114.24.182/book_format.php">Hardcover</a>
+                <a href="">Ebook</a>
+            </div>
+            </div>
+            <input type="text" id="searchBox" name="search" placeholder="Search an author">
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+			<br>
+            </form>
+            <form method="post" action="avggenre.php">
+            <a href="http://40.114.24.182/booksavailable.php" style="font-size: 20px;color:white">Books available</a>
+            <input type="text" id="searchBox" name="search" placeholder="Search a genre">
+            <input type="submit" name="Submit" id="Submit" value="Submit">
+            </form>
+        </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Patron</title>
+    </head>
+    <style>
+                body{
+                background-image: url(https://images.squarespace-cdn.com/content/v1/5c06ab74da02bc6a8954dab1/1544553720891-IAHU5M8XUJ61T468BIYP/book-shelves-bookcase-bcase-books-926680.jpg?format=1500w);                }
+                h1 {
+                        color: white;
+                        text-align: center;
+                        }
+
+                p {
+                        font-family: verdana;
+                        font-size: 20px;
+                        }
+        </style>
+    <body>
+        <center>
+        <h1>Library Management System</h1>
+        <div class="topnav">
+                        <p><a href="http://40.114.24.182/home.html" style="color:white">Home</a></p>
+        </div>
+        <h1>Add Patron</h1>
+        <form method="post" action="connect1.php">
+            <label for="patronID" style="color:white">Patron ID:</label>
+            <input type="text" id="patronID" name="patronID">
+            <br>
+            <label for="pFirstName" style="color:white">First name:</label>
+            <input type="text" id="pFirstName" name="pFirstName">
+            <br>
+            <label for="pLastName" style="color:white">Last name:</label>
+            <input type="text" id="pLastName" name="pLastName">
+            <br>
+            <label for="Birthday" style="color:white">Birth date:</label>
+            <input type="date" id="Birthday" name="Birthday">
+            <br>
+            <input type="submit" value="Submit">
+			        </form>
+                </center>
+    </body>
+</html>

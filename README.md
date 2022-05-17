@@ -1,5 +1,4 @@
-# CSCI-5170
-Library Management System
+# Library Management System
 
 A library database developed using MySQL and php.
 
